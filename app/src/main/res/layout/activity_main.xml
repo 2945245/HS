@@ -22,7 +22,6 @@
             android:layout_width="65dp"
             android:layout_height="57dp"
             app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
-
     </FrameLayout>
 
     <TextView
