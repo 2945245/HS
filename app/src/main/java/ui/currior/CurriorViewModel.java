@@ -1,13 +1,13 @@
-package ui.services;
+package ui.currior;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ServiceViewModel extends ViewModel {
+public class CurriorViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public ServiceViewModel() {
+    public CurriorViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }
@@ -17,5 +17,4 @@ public class ServiceViewModel extends ViewModel {
     public LiveData<String> getText() {
         return mText;
     }
-
 }
