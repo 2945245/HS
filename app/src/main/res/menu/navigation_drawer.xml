@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/data">
+        <item
+            android:id="@+id/nav_first"
+            android:icon="@mipmap/harmony"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/harmony"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@mipmap/harmony"
+            android:title="Services" />
+        <item
+            android:id="@+id/nav_deliver"
+            android:icon="@mipmap/harmony"
+            android:title="Deliver" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@mipmap/harmony"
+            android:title="Contact" />
+
+
+    </group>
+    <group android:id="@+id/tools">
+
+        <item
+            android:id="@+id/nav_type_chart"
+            android:icon="@mipmap/harmony"
+            android:title="Reviews" />
+
+    </group>
+
+
+</menu>

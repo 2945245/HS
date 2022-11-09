@@ -6,42 +6,49 @@
     app:startDestination="@+id/nav_pokedex">
 
     <fragment
-        android:id="@+id/nav_type_chart"
+        android:id="@+id/nav_first"
         android:name="ui.firstpage.FirstpageFragment"
         android:label="Reviews"
         tools:layout="@layout/fragment_firstpage" />
-    <fragment
-        android:id="@+id/nav_type"
-        android:name="ui.contact.ContactFragment"
-        android:label="Contact us"
-        tools:layout="@layout/fragment_contact" />
 
     <fragment
-        android:id="@+id/nav_pokedex"
+        android:id="@+id/nav_deliver"
+        android:name="ui.deliver.DeliverFragment"
+        android:label="Deliver"
+        tools:layout="@layout/fragment_deliver" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
         android:name="ui.about.AboutFragment"
         android:label="Harmony"
         tools:layout="@layout/fragment_about" />
 
     <fragment
-        android:id="@+id/nav_moves"
+        android:id="@+id/nav_services"
         android:name="ui.services.ServiceFragment"
         android:label="Home"
         tools:layout="@layout/fragment_service" />
 
     <fragment
-        android:id="@+id/nav_abilities"
+        android:id="@+id/nav_currior"
         android:name="ui.currior.CurriorFragment"
         android:label="Currior Services"
         tools:layout="@layout/fragment_currior" />
 
     <fragment
-        android:id="@+id/nav_items"
+        android:id="@+id/nav_express"
         android:name="ui.express.ExpressFragment"
         android:label="Express Services"
         tools:layout="@layout/fragment_express" />
+    <fragment
+        android:id="@+id/nav_moving"
+        android:name="ui.moving.MovingFragment"
+        android:label="Moving Services"
+        tools:layout="@layout/fragment_moving" />
 
     <fragment
-        android:id="@+id/nav_locations"
+        android:id="@+id/nav_contact"
         android:name="ui.contact.ContactFragment"
         android:label="Offers/Packages"
         tools:layout="@layout/fragment_contact" />

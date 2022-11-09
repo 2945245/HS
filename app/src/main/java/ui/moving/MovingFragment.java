@@ -1,33 +1,35 @@
-package ui.contact;
+package ui.moving;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import com.example.hs.MainActivity;
 import com.example.hs.R;
-import ui.firstpage.FirstpageFragment;
-import ui.firstpage.FirstpageViewModel;
 
-public class ContactFragment extends Fragment {
-    private FirstpageViewModel mViewModel;
+import ui.about.AboutFragment;
+import ui.about.AboutViewModel;
 
-    public static FirstpageFragment newInstance()
+public class MovingFragment extends Fragment {
+    private MovingViewModel mViewModel;
+
+    public static MovingFragment newInstance()
     {
-        return new FirstpageFragment();
+        return new MovingFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_firstpage, container, false);
-
+        View root = inflater.inflate(R.layout.fragment_moving, container, false);
 
         return root;
-
 
     }
 
