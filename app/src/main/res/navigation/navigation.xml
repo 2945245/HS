@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_pokedex">
+
+    <fragment
+        android:id="@+id/nav_first"
+        android:name="ui.firstpage.FirstpageFragment"
+        android:label="Reviews"
+        tools:layout="@layout/fragment_firstpage" />
+
+    <fragment
+        android:id="@+id/nav_deliver"
+        android:name="ui.deliver.DeliverFragment"
+        android:label="Deliver"
+        tools:layout="@layout/fragment_deliver" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="ui.about.AboutFragment"
+        android:label="Harmony"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="ui.services.ServiceFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_service" />
+
+    <fragment
+        android:id="@+id/nav_currior"
+        android:name="ui.currior.CurriorFragment"
+        android:label="Currior Services"
+        tools:layout="@layout/fragment_currior" />
+
+    <fragment
+        android:id="@+id/nav_express"
+        android:name="ui.express.ExpressFragment"
+        android:label="Express Services"
+        tools:layout="@layout/fragment_express" />
+    <fragment
+        android:id="@+id/nav_moving"
+        android:name="ui.moving.MovingFragment"
+        android:label="Moving Services"
+        tools:layout="@layout/fragment_moving" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="ui.contact.ContactFragment"
+        android:label="Offers/Packages"
+        tools:layout="@layout/fragment_contact" />
+
+    <!-- <fragment
+        android:id="@+id/nav_natures"
+        android:name="io.github.kasperknop.pokedb.LifestyleFragment"
+        android:label="Lifestyle tricks"
+        tools:layout="@layout/fragment_lifestyle" /> -->
+
+
+    <!--<fragment
+       android:id="@+id/nav_iv_calculator"
+       android:name="com.example.harmony.ui.contact_us.ContactUsFragment."
+       android:label="Contact us"
+       tools:layout="@layout/fragment_contact_us" />-->
+
+
+
+
+    <!--<activity
+        android:id="@+id/PersonInformation"
+        android:name="com.example.harmony.Forget"
+        android:label="Personal Information"
+        tools:layout="@layout/personinformation" />-->
+
+
+
+
+
+
+
+</navigation>
