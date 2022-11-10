@@ -13,9 +13,6 @@ import androidx.fragment.app.Fragment;
 import com.example.hs.MainActivity;
 import com.example.hs.R;
 
-import ui.about.AboutFragment;
-import ui.about.AboutViewModel;
-
 public class FirstpageFragment extends Fragment {
     private FirstpageViewModel mViewModel;
 

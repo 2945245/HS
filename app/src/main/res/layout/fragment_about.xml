@@ -43,18 +43,6 @@
         app:layout_constraintVertical_bias="0.426"
         app:srcCompat="@mipmap/harmony" />
 
-    <Button
-        android:id="@+id/backabout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.843" />
-
     <TextView
         android:id="@+id/start"
         android:layout_width="171dp"

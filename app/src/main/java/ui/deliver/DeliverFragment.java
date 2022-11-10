@@ -13,9 +13,6 @@ import androidx.fragment.app.Fragment;
 import com.example.hs.MainActivity;
 import com.example.hs.R;
 
-import ui.moving.MovingFragment;
-import ui.moving.MovingViewModel;
-
 public class DeliverFragment extends Fragment {
     private DeliverViewModel mViewModel;
 

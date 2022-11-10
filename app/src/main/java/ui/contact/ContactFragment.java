@@ -23,7 +23,7 @@ public class ContactFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_firstpage, container, false);
+        View root = inflater.inflate(R.layout.fragment_contact, container, false);
 
 
         return root;

@@ -30,19 +30,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initViews();
-        setupNavigation();
+       initViews();
+       setupNavigation();
 
 
+    }
+
+
+    private void initViews() {
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationDrawer = findViewById(R.id.navigation_drawer);
+        bottomNavigationView = findViewById(R.id.bottom_navigation_view);
+        toolbar = findViewById(R.id.toolbar);
     }
 
     private void setupNavigation() {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         setSupportActionBar(toolbar);
+
         appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_pokedex,
-                R.id.nav_first,
-                R.id.nav_about)
+                R.id.fragment_firstpage,
+                R.id.fragment_about
+               // R.id.Account
+                 )
                 .setOpenableLayout(drawerLayout)
                 .build();
 
@@ -50,13 +60,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
         NavigationUI.setupWithNavController(navigationDrawer, navController);
         setBottomNavigationVisibility();
-
     }
 
     private void setBottomNavigationVisibility() {
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
             final int id = destination.getId();
-            if (id == R.id.nav_pokedex || id == R.id.nav_first) {
+            if (id == R.id.fragment_firstpage || id == R.id.fragment_about) {
                 bottomNavigationView.setVisibility(View.VISIBLE);
             } else {
                 bottomNavigationView.setVisibility(View.GONE);
@@ -64,19 +73,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void initViews() {
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationDrawer = findViewById(R.id.navigation_drawer);
-        bottomNavigationView = findViewById(R.id.bottom_navigation_view);
-        toolbar = findViewById(R.id.toolbar);
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        return NavigationUI.navigateUp(navController, appBarConfiguration) || super.onSupportNavigateUp();
     }
+
+    @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START))
             drawerLayout.closeDrawer(GravityCompat.START);
         else
             super.onBackPressed();
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.appbar, menu);
@@ -86,9 +95,5 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
-    }
-    @Override
-    public boolean onSupportNavigateUp() {
-        return NavigationUI.navigateUp(navController, appBarConfiguration) || super.onSupportNavigateUp();
     }
 }

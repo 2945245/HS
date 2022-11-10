@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_pokedex">
+    app:startDestination="@+id/drawer_layout">
 
     <fragment
         android:id="@+id/nav_first"
@@ -62,7 +62,7 @@
 
     <!--<fragment
        android:id="@+id/nav_iv_calculator"
-       android:name="com.example.harmony.ui.contact_us.ContactUsFragment."
+       android:name="com.example.harmony.com.example.hs.ui.contact_us.ContactUsFragment."
        android:label="Contact us"
        tools:layout="@layout/fragment_contact_us" />-->
 
