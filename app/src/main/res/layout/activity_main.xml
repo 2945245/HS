@@ -9,68 +9,123 @@
     tools:openDrawer="start"
     tools:context=".MainActivity">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+   <TextView
+       android:id="@+id/main_text"
+       android:layout_width="224dp"
+       android:layout_height="117dp"
+       android:text="We are a transport company with trustworthy drivers. We deliver all over the europe."
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.497"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.631" />
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            android:theme="@style/Theme.Harmony.AppBarOverlay">
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/my_toolbar"
+       style="@style/Widget.MaterialComponents.Toolbar.Primary"
+       android:layout_width="411dp"
+       android:layout_height="61dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       app:srcCompat="?attr/actionModeCloseDrawable"
+       tools:ignore="MissingConstraints" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"/>
-                //app:popupTheme="@style/Theme.Harmony.PopupOverlay" />
+   <ImageView
+       android:id="@+id/imageView2"
+       android:layout_width="398dp"
+       android:layout_height="242dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.461"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.247"
+       app:srcCompat="@mipmap/hs" />
 
-        </com.google.android.material.appbar.AppBarLayout>
+   <ImageView
+       android:id="@+id/imageView13"
+       android:layout_width="85dp"
+       android:layout_height="47dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.01"
+       app:srcCompat="?attr/actionModeCloseDrawable" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="?attr/actionBarSize">
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottom_navigation_view"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginEnd="0dp"
-                android:background="?android:attr/windowBackground"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:menu="@menu/bottom_nav" />
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".MainActivity"
+          tools:layout_editor_absoluteX="0dp"
+          tools:layout_editor_absoluteY="95dp">
 
-            <fragment
-                android:id="@+id/nav_host_fragment"
-                android:name="androidx.navigation.fragment.NavHostFragment"
-                android:layout_width="256dp"
-                android:layout_height="618dp"
-                app:defaultNavHost="true"
-                app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.982"
-                app:navGraph="@navigation/navigation" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+          <!--<com.google.android.material.appbar.AppBarLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              //android:theme="@style/Theme.Harmony.AppBarOverlay">
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+              <androidx.appcompat.widget.Toolbar
+                  android:id="@+id/toolbar"
+                  android:layout_width="match_parent"
+                  android:layout_height="?attr/actionBarSize"
+                  android:background="?attr/colorPrimary" />
+              //app:popupTheme="@style/Theme.Harmony.PopupOverlay" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_drawer"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/navigation_drawer_header"
-        tools:ignore="MissingConstraints"
-        app:menu="@menu/navigation_drawer"/>
+          </com.google.android.material.appbar.AppBarLayout>-->
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/container"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingTop="?attr/actionBarSize">
+
+           <com.google.android.material.bottomnavigation.BottomNavigationView
+               android:id="@+id/bottom_navigation_view"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="0dp"
+               android:layout_marginEnd="0dp"
+               android:background="?android:attr/windowBackground"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               app:menu="@menu/bottom_nav" />
+
+           <fragment
+               android:id="@+id/nav_host_fragment"
+               android:name="androidx.navigation.fragment.NavHostFragment"
+               android:layout_width="280dp"
+               android:layout_height="659dp"
+               app:defaultNavHost="true"
+               app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.982"
+               app:navGraph="@navigation/navigation" />
+
+           <com.google.android.material.navigation.NavigationView
+               android:id="@+id/navigation_drawer"
+               android:layout_width="273dp"
+               android:layout_height="788dp"
+               android:layout_gravity="start"
+               app:headerLayout="@layout/navigation_drawer_header"
+               app:menu="@menu/navigation_drawer"
+               tools:ignore="MissingConstraints"
+               tools:layout_editor_absoluteX="0dp"
+               tools:layout_editor_absoluteY="-57dp" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
