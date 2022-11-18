@@ -20,16 +20,16 @@
         app:layout_constraintVertical_bias="0.233" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="174dp"
-        android:layout_height="80dp"
-        android:text="We are a transport company with trustworthy drivers. We deliver all over the europe."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
+    android:id="@+id/main_text"
+    android:layout_width="174dp"
+    android:layout_height="80dp"
+    android:text="We are a transport company with trustworthy drivers. We deliver all over the europe."
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.772"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.423" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -41,19 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.426"
-        app:srcCompat="@mipmap/harmony" />
-
-    <Button
-        android:id="@+id/backabout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.843" />
+        app:srcCompat="@mipmap/hs" />
 
     <TextView
         android:id="@+id/start"
