@@ -8,6 +8,8 @@
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/drawable/contact.xml" value="0.1" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/app_bar.xml" value="0.152" />
+        <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/content.xml" value="0.12685185185185185" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/currior.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/fragment_about.xml" value="0.22" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/fragment_contact.xml" value="0.24895833333333334" />
@@ -17,7 +19,7 @@
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/fragment_firstpage.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/fragment_moving.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/fragment_service.xml" value="0.18" />
-        <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/navigation_drawer_header.xml" value="0.1" />
+        <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/layout/navigation_drawer_header.xml" value="0.22" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/menu/appbar.xml" value="0.234375" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/menu/bottom_nav.xml" value="0.234375" />
         <entry key="..\:/Users/ravne/Desktop/HSServices/HS/app/src/main/res/menu/navigation_drawer.xml" value="0.25" />

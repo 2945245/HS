@@ -4,5 +4,12 @@
         android:id="@+id/nav_settings"
         android:orderInCategory="100"
         android:title="Settings"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_person_24"/>
 </menu>
